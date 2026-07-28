@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "vehicle_uq_active_user_id" ON "vehicle" USING btree ("user_id") WHERE "vehicle"."deleted_at" IS NULL;

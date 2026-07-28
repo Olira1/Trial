@@ -1,0 +1,2 @@
+DROP INDEX "vehicle_uq_plate_number";--> statement-breakpoint
+CREATE UNIQUE INDEX "vehicle_uq_active_plate_identity" ON "vehicle" USING btree ("plate_region","plate_code","plate_number") WHERE "vehicle"."deleted_at" IS NULL;

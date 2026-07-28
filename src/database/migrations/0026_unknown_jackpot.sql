@@ -1,0 +1,2 @@
+ALTER TABLE "vehicle" ADD CONSTRAINT "vehicle_ck_plate_code_subtype" CHECK ((("vehicle"."plate_code" = '03' AND "vehicle"."plate_code_subtype" IS NOT NULL) OR ("vehicle"."plate_code" <> '03' AND "vehicle"."plate_code_subtype" IS NULL)));--> statement-breakpoint
+ALTER TABLE "vehicle" ADD CONSTRAINT "vehicle_ck_tin_required" CHECK ((NOT ("vehicle"."plate_code" = '01' OR ("vehicle"."plate_code" = '03' AND "vehicle"."plate_code_subtype" = 'transport_service')) OR NULLIF(BTRIM("vehicle"."tin_number"), '') IS NOT NULL));

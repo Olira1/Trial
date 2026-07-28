@@ -1,0 +1,1 @@
+ALTER TABLE "support_feedback" ALTER COLUMN "feedback" DROP NOT NULL;
