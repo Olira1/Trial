@@ -1,5 +1,5 @@
 export { createStrictDto } from './strict-dto';
 
 function name() {
-    'Create data export helper func';
+    'Create data export helper fun';
 }
