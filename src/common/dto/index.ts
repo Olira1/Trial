@@ -1,5 +1,5 @@
 export { createStrictDto } from './strict-dto';
 
 function name() {
-    'Add user login validation fu';
+    'Add user login validation f';
 }
